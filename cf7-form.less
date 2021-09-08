@@ -20,9 +20,13 @@
   position: relative;
   z-index: 1;
   pointer-events: none;
+  color: @label-color;
+
+
 
   label.active & {
     transform: translate(0);
+    color: @active-label-color;
   }
 }
 
@@ -31,6 +35,7 @@
 }
 .wpcf7-form-control {
   width: 100%;
+  color: @text-color;
 }
 .wpcf7-text {
   border: none;
