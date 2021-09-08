@@ -1,0 +1,41 @@
+@border-color: @gray;
+@label-color: @gray;
+@active-label-color: @red;
+@text-color: @black;
+
+.wpcf7-form {
+  width: 100%;
+  
+  > p {
+
+    > label {
+      position: relative;
+    }
+  }
+}
+.wpcf7-form-span-label {
+  transition: 0.3s ease-out all;
+  transform: translate(0, 40px);
+  display: block;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+
+  label.active & {
+    transform: translate(0);
+  }
+}
+
+.wpcf7-form-control-wrap {
+
+}
+.wpcf7-form-control {
+  width: 100%;
+}
+.wpcf7-text {
+  border: none;
+  border-bottom: 1px solid @border-color;
+}
+.wpcf7-textarea {
+
+}
